@@ -11,8 +11,8 @@
         android:layout_width="410dp"
         android:layout_height="110dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="179dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="1dp">
 
         <Button
             android:id="@+id/btnc"
@@ -80,11 +80,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="410dp"
         android:layout_height="110dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="289dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btn7"
@@ -152,11 +153,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="410dp"
         android:layout_height="110dp"
+        android:layout_marginBottom="2dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="619dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
 
         <Button
             android:id="@+id/btn0"
@@ -208,11 +211,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="410dp"
         android:layout_height="110dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="399dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btn4"
@@ -280,11 +284,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="410dp"
         android:layout_height="110dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="509dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btn1"
@@ -355,14 +360,15 @@
         android:id="@+id/equal"
         android:layout_width="413dp"
         android:layout_height="180dp"
-        android:text="0"
+        android:layout_marginBottom="1dp"
         android:paddingTop="90dp"
         android:paddingRight="20dp"
+        android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#000000"
         android:textSize="60sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="-2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
